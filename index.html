@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Biochemistry Department</title>
+        <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+        <link href="lightbox/css/lightbox.css" rel="stylesheet" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        
+        <script src="js/vendor/modernizr.min.js"></script>
+        <script src="js/vendor/respond.min.js"></script>
+        
+        <!-- include extern jQuery file but fall back to local file if extern one fails to load !-->
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript">window.jQuery || document.write('<script type="text/javascript" src="js\/vendor\/1.7.2.jquery.min"><\/script>')</script>
+        
+        <script src="lightbox/js/lightbox.js"></script>
+        <script src="js/vendor/prefixfree.min.js"></script>
+        <script src="js/vendor/jquery.slides.min.js"></script>
+        <script src="js/script.js"></script>
+        
+        <!--[if lt IE 9]>
+            <style>
+                header
+                {
+                    margin: 0 auto 20px auto;
+                }
+                #four_columns .img-item figure span.thumb-screen
+                {
+                    display:none;
+                }  
+            </style>
+        <![endif]-->
+        
+        
+        <script>
+        $(function() {
+          $('#slides').slidesjs({	
+            height: 450,
+            navigation: false,
+            pagination: false,
+            effect: {
+              fade: {
+                speed: 400
+              }
+            },
+            callback: {
+                start: function(number)
+                {			
+                    $("#slider_content1,#slider_content2,#slider_content3").fadeOut(500);
+                },
+                complete: function(number)
+                {			
+                    $("#slider_content" + number).delay(500).fadeIn(1000);
+                }		
+            },
+            play: {
+                active: false,
+                auto: true,
+                interval: 12000,
+                pauseOnHover: false,
+                effect: "fade"
+            }
+          });
+        });
+        </script>
+	</head>
+
+	<body>
+        <header>
+	<!--simple mobile menu-->
+            <div class="toggleMobile">
+                <span class="menu1"></span>
+                <span class="menu2"></span>
+                <span class="menu3"></span>
+            </div>
+            <div id="mobileMenu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+	 <!--no need to fix mobile menu until site is in Jekyll-->
+       
+            
+            <div class="navigation">
+		        <ul>
+					<li><a href="http://www.ucsf.edu">UCSF</a></li>		        
+					<li><a href="#">Home</a></li>
+		            <li><a href="#">Faculty</a>
+		                <ul>
+		                    <li><a href="#">David Agard</a></li>
+		                    <li><a href="#">Elizabeth Blackburn</a></li>
+		                    <li><a href="#">Yifan Cheng</a></li>
+		                    <li><a href="#">Joseph DeRisi</a></li>
+							<li><a href="#">Hana El-Samad</a></li>
+							<li><a href="#">Hao Li</a></li>
+							<li><a href="#">Bob Fletterick</a></li>
+							<li><a href="#">Bob Stoud</a></li>
+							<li><a href="#">Wallace Marshall</a></li>
+							<li><a href="#">Joseph DeRisi</a></li>
+							<li><a href="#">Joseph DeRisi</a></li>
+		                </ul>
+		            </li>
+		            <li><a href="#">Staff</a>
+		                <ul>
+		                    <li><a href="#">Anna Lisa Des Prez</a></li>
+		                    <li><a href="#">Johnny Breganza</a></li>
+		                    <li><a href="#">Bernadette Cuenco</a></li>
+		                    <li><a href="#">Ronald Romano</a></li>
+							<li><a href="#">Luiz Marin</a></li>
+							<li><a href="#">Armando Garzota</a></li>
+							<li><a href="#">La-Risa Lewis</a></li>
+							<li><a href="#">Tatiana Eisenberg</a></li>
+		                </ul>
+		            </li>
+					<li><a href="#">Events</a>
+		                <ul>
+		                    <li><a href="#">Tuesday Seminar</a></li>
+							<li><a href="#">Friday Faculty Lunch</a></li>
+							<li><a href="#">Mission Bay Lunch</a></li>
+							<li><a href="#">Special Events</a></li>
+		                </ul>
+		            </li>
+		            <li><a href="#">About B&B</a></li>
+		        </ul>
+		    </div>
+        </header>
+  
+<!-- go ahead and use the slider lets show some images -->
+          <div id="slides">
+                <img src="img/slide-950px-450px.jpg" alt="alt text here">
+
+            </div>
+        </section>
+        <section id="spacer">  
+        
+            <p>Department of Biochemistry & Biophysics</p>
+                      
+        </section>
+        <section id="boxcontent">
+        	<h2 class="hidden">boxes</h2>
+            <article>            	               
+                <img src="img/icon1.png" alt="Some alt text"/>                
+                <h3>News</h3>
+                <p>        	
+                    Upcoming news about what is going on with our department and the exciting research here at UCSF. 
+                </p>
+            </article>
+            <article>            	     
+                <img src="img/icon2.png" alt="Some alt text"/>              
+                <h3>Honors and Awards</h3>
+                <p>        	
+                    Lists of awards from our faculty check here for what is going on.
+                </p>
+            </article>
+            <article>            	    
+                <img src="img/icon3.png" alt="Some alt text"/>                
+                <h3>Upcoming</h3>
+                <p>        	
+                    Upcoming events both in our department but also here at UCSF!.
+                </p>
+            </article>
+            <br class="clear"/>
+        </section>
+ 
+<!-- four column section here -->
+<!-- using Lightbox code for small images-->
+<!-- this section cut out     
+        <section id="four_columns">
+            <h2>
+                Some Slides Four Columns
+            </h2>    
+            <article class="img-item">
+            	<h3 class="hidden">SLIDE ONE</h3>
+                <figure>  
+                    <a href="img/example-slide-1.jpg" rel="lightbox" title="Some title">
+                        <span class="thumb-screen"></span>
+                        <img src="img/example-slide-one.jpg" alt="Some alt text"/>
+                    </a>
+                    <caption>
+                        <strong>
+                            Photo by: Some name
+                        </strong>
+                        Neutra lomo Bushwick kogi, shabby chic flannel.
+                    </caption>
+                </figure>
+            </article>
+            <article class="img-item">
+            	<h3 class="hidden">SLIDE TWO</h3>
+                <figure>
+                    <a href="img/example-slide-2.jpg" rel="lightbox" title="Some title">
+                        <span class="thumb-screen"></span>
+                        <img src="img/example-slide-two.jpg" alt="Some alt text"/>
+                    </a>
+                    <caption>
+                        <strong>
+                            Photo by: Some name
+                        </strong>
+                        High Life fanny pack Brooklyn raw denim occupy fap photo booth
+                    </caption>
+                </figure>
+            </article>
+            <article class="img-item">
+            	<h3 class="hidden">SLIDE THREE</h3>
+                <figure>
+                    <a href="img/example-slide-3.jpg" rel="lightbox" title="Some title">
+                        <span class="thumb-screen"></span>
+                        <img src="img/example-slide-three.jpg" alt="Some alt text"/>
+                    </a>
+                    <caption>
+                        <strong>
+                            Photo by: Some name
+                        </strong>
+                        d IPhone pop-up normcore flexitarian Pinterest.
+                    </caption>
+                </figure>
+            </article>
+            <article class="img-item">
+            	<h3 class="hidden">SLIDE FOUR</h3>
+                <figure>
+                    <a href="img/example-slide-4.jpg" rel="lightbox" title="Some title">
+                        <span class="thumb-screen"></span>
+                        <img src="img/example-slide-four.jpg" alt="Some alt text"/>
+                    </a>
+                    <caption>
+                        <strong>
+                            Photo by: Some name
+                        </strong>
+                        DIY biodiesel Neutra art party kogi master cleanse.
+                    </caption>
+                </figure>
+            </article>
+            <br class="clear"/>
+        </section>
+ -->    
+
+        <footer>
+        	<h2 class="hidden">Biochem Footer</h2>
+            <section id="copyright">
+            	<h3 class="hidden">Copyright</h3>
+                <div class="wrapper">
+                    <div class="social">
+                    &copy; Copyright 2015 by <a href="http://www.ucsf.edu">UCSF</a>. All Rights Reserved.
+                </div>
+            </section>
+            <section class="wrapper">
+            	<h3 class="hidden">Footer content</h3>
+                <article class="column">
+                    <h4>Contact us.</h4>
+       					<p>600 16th Streeet.<p>
+						<p>Genetech Hall, S222<p>
+						<p>ph:(415) 476-6000<p>
+						<p>fax:(415) 476-6001<p>
+						<p>email: biochem@ucsf.edu<p>
+					    <p>link to google maps<p>
+						<p>link to parking info<p>
+                </article>
+                <article class="column midlist">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="javascript:void(0)">Linked In</a></li>
+                        <li><a href="javascript:void(0)">Twitter</a></li>
+                        <li><a href="javascript:void(0)">Facebook</a></li>
+                        <li><a href="javascript:void(0)">Google Plus</a></li>
+                    </ul>
+
+                </article>
+				<article class="column rightlist">
+				    <h4>Links</h4>
+                   <ul>
+                        <li><a href="javascript:void(0)">Tetrad Program</a></li>
+                        <li><a href="javascript:void(0)">UCSF Careers</a></li>
+                        <li><a href="javascript:void(0)">HHMI</a></li>
+                        <li><a href="javascript:void(0)">Something</a></li>
+                    </ul>
+
+                    <br class="clear"/>
+                </article>
+            </section>
+        </footer>
+	</body>
+</html>
