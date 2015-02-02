@@ -319,6 +319,7 @@ header p
    		 
    	.newstab_big {
 		border-bottom-width: 0;
+		min-height: 367px;
 		margin: 0;
 		z-index: -10;
 		text-decoration: none;
