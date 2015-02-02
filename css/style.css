@@ -100,6 +100,58 @@ header p
         margin-left:132px;
 }
 
+/* CALENDAR PAGE */
+
+.datebutton {
+  
+  position: relative;
+  top: 8px;
+  left: 5px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: #706e70 !important;
+  font-size: 14px;
+  float: left;
+  text-shadow: 1px 1px 0px #f3f3f3;
+  box-shadow: 1px 1px 1px #706e70;
+  padding: 8px 12px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: #EEEEEE;
+  background: linear-gradient(top,  #EEEEEE,  #BABABA);
+  background: -ms-linear-gradient(top,  #EEEEEE,  #BABABA);
+  background: -webkit-gradient(linear, left top, left bottom, from(#EEEEEE), to(#BABABA));
+  background: -moz-linear-gradient(top,  #EEEEEE,  #BABABA);
+}
+
+.datebutton h1 {
+	font-size: 28px;
+	color: #080808;
+	}
+
+.datetext {
+		font-family: "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+		line-height: 18px;
+		font-size: 14px;
+		font-weight: 400;
+		text-decoration: none;
+		color: #000000;
+		text-align: left;
+		position: relative;
+		top: 12px;
+		left: 12px;
+}
+
+.datetext i {
+		font-style: italic;
+		}
+
+.datetext b {
+		font-weight: 600;
+		}
+
+
 
 /* TABLE DEFINITIONS */
 
@@ -286,6 +338,7 @@ header p
    		 }	 
    		 
     .newscontent_clear {
+    	text-align: left;
 		clear: both;
 		padding: .25 0em;
 		z-index: 1000;
