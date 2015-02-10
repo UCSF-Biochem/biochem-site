@@ -307,6 +307,18 @@ header p
 		top: -25px;
 		}	
 		
+	.myrow { 
+		display: tabele-row;
+		}
+
+	.newscell {
+		width: 45%;
+		display: table-cell;
+		padding-bottom: 10px;
+		padding-right: 8px;
+
+		}
+		
 	.mycell {
 		display: table-cell;
 		width: 30%;
@@ -314,6 +326,12 @@ header p
 		min-height: 350px;
 		}
 		
+	.mycell66 {
+		display: table-cell;
+		width: 66%;
+		padding: 5px;
+		min-height: 350px;
+		}		
 
 	.newstab {
 		border-bottom-width: 0;
